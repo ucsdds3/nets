@@ -7,5 +7,5 @@ export default defineConfig({
     react(), // Uncommented this
     tailwindcss(),
   ],
-  base: "/nets/",
+  base: "/nets",
 });
