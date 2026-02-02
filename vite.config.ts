@@ -1,13 +1,11 @@
 import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
-// If you are using a framework plugin like React, import it as well
-// import react from '@vitejs/plugin-react';
+import react from "@vitejs/plugin-react"; // Uncommented this
 
 export default defineConfig({
   plugins: [
+    react(), // Uncommented this
     tailwindcss(),
-    
-    // ...other plugins like react()
   ],
   base: "/nets/",
 });
