@@ -6,6 +6,8 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [
     tailwindcss(),
+    
     // ...other plugins like react()
   ],
+  base: "/nets/",
 });
