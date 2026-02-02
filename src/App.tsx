@@ -10,7 +10,7 @@ import Join from './pages/Join/join'
 
 export default function App() {
   return (
-    <BrowserRouter basename="/nets/">
+    <BrowserRouter basename="/nets">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
