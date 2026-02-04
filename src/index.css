@@ -1,12 +1,20 @@
 @import "tailwindcss";
 @plugin "daisyui";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
+/* Override theme colors so footer uses #3CBCD1 and #303030 */
+:root {
+  --color-primary: #3cbcd1;
+  --color-neutral: #303030;
+  --color-primary-content: #ffffff;
+  --color-neutral-content: #e5e7eb;
+  --color-base-100: #ffffff;
+  --color-base-200: #f3f4f6;
+  --color-base-300: #e5e7eb;
+  --color-base-content: #1f2937;
+}
 
 body {
-    margin:  0;
-    background-color: white;
-    font-family: system-ui, sans-serif;
+  margin: 0;
+  background-color: white;
+  font-family: system-ui, sans-serif;
 }
