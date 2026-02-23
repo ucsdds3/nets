@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { SiInstagram, SiDiscord, SiLinkedin } from "react-icons/si";
 import netsLogo from "../assets/NETS.png";
 
@@ -7,12 +8,12 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-8">
         <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
           <div className="text-3xl font-semibold tracking-wide text-primary">INTERESTED?</div>
-          <a
-            href={""}
+          <Link
+            to="/join"
             className="inline-flex items-center justify-center rounded-full border-2 border-primary px-10 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-neutral bg-white"
           >
             JOIN US
-          </a>
+          </Link>
         </div>
 
         <div className="mt-6 h-px w-full bg-white/30" />
@@ -34,19 +35,19 @@ export default function Footer() {
           <div>
             <div className="text-lg font-semibold">Explore</div>
             <nav className="mt-3 space-y-1 text-sm text-white/80 flex flex-col">
-              <a className="hover:text-primary w-fit" href={""}>
+              <Link to="/teams" className="text-white hover:text-cyan-400">
                 Teams
-              </a>
-              <a className="hover:text-primary w-fit" href={""}>
+              </Link>
+              <Link to="/projects" className="text-white hover:text-cyan-400">
                 Projects
-              </a>
-              <a className="hover:text-primary w-fit" href={""}>
+              </Link>
+              <Link to="/events" className="text-white hover:text-cyan-400">
                 Events
-              </a>
-              <a className="hover:text-primary w-fit" href={""}>
+              </Link>
+              <Link to="/about" className="text-white hover:text-cyan-400">
                 About
-              </a>
-            </nav>
+                </Link>
+              </nav>
           </div>
 
           <div>
