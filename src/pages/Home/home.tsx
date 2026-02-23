@@ -78,7 +78,7 @@ export default function Home() {
                     style={{ backgroundColor: '#3CBCD1' }}
                     onMouseEnter={e => e.currentTarget.style.backgroundColor = '#2fa8bc'}
                     onMouseLeave={e => e.currentTarget.style.backgroundColor = '#3CBCD1'}
-                    className="flex items-center gap-2 text-white text-sm font-semibold px-5 py-2 w-[140px]"
+                    className="flex items-center justify-center gap-2 text-white text-sm font-semibold px-5 py-2 w-[140px]"
                   >
                     OUR TEAM <span>→</span>
                   </button>
@@ -123,7 +123,7 @@ export default function Home() {
                     style={{ backgroundColor: '#3CBCD1' }}
                     onMouseEnter={e => e.currentTarget.style.backgroundColor = '#2fa8bc'}
                     onMouseLeave={e => e.currentTarget.style.backgroundColor = '#3CBCD1'}
-                    className="flex items-center gap-2 text-white text-sm font-semibold px-5 py-2 w-[140px]"
+                    className="flex items-center justify-center gap-2 text-white text-sm font-semibold px-5 py-2 w-[140px]"
                   >
                     JOIN US <span>→</span>
                   </button>
@@ -154,7 +154,7 @@ export default function Home() {
             { img: projectsImgSrc, label: "PROJECTS",  to: "/projects" },
           ].map(({ img, label, to }) => (
             <Link to={to} key={label} className="flex flex-col items-center group">
-              <div className="relative w-full overflow-hidden rounded shadow">
+              <div className="relative w-full overflow-hidden shadow">
                 <img
                   src={img}
                   alt={label}
