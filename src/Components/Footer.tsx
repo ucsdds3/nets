@@ -4,7 +4,7 @@ import netsLogo from "../assets/NETS.png";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-neutral text-white rounded-t-4xl">
+    <footer className="w-full bg-neutral text-white z-100">
       <div className="mx-auto max-w-6xl px-6 py-8">
         <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
           <div className="text-3xl font-semibold tracking-wide text-primary">INTERESTED?</div>

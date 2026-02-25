@@ -1,3 +1,4 @@
+import boardImgSrc from "../../assets/header-image.png";
 export default function BoardLanding() {
   return (
     <section className="relative h-screen flex overflow-hidden bg-[#2a2a2a]">
@@ -14,11 +15,9 @@ export default function BoardLanding() {
         <h1 className="text-[10vw] font-bold text-white tracking-tight drop-shadow-md">
           BOARD MEMBERS
         </h1>
-        <div
+        <img
           className="w-[60%] absolute right-0 top-1/3 -z-1 aspect-4/3 rounded-sm overflow-hidden shadow-2xl"
-          style={{
-            background: "linear-gradient(135deg, #e07a5f 0%, #f2cc8f 40%, #81b29a 100%)",
-          }}
+          src={boardImgSrc}
           aria-hidden
         />
       </div>

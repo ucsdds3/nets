@@ -7,8 +7,8 @@ export default function Navbar() {
         <Link to="/" className="text-white hover:text-cyan-400">
           Home
         </Link>
-        <Link to="/teams" className="text-white hover:text-cyan-400">
-          Teams
+        <Link to="/board" className="text-white hover:text-cyan-400">
+          Board
         </Link>
         <Link to="/projects" className="text-white hover:text-cyan-400">
           Projects
