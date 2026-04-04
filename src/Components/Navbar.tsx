@@ -3,7 +3,7 @@ import logoSrc from "../assets/logo.svg";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[#303030] px-6 py-4 shadow-md z-50">
+    <nav className="fixed top-0 left-0 w-full bg-black px-6 py-4 shadow-md z-50">
       <div className="flex justify-between items-center">
         <Link to="/">
           <img src={logoSrc} alt="NETS Logo" className="h-10" />
@@ -12,8 +12,8 @@ export default function Navbar() {
           <Link to="/" className="text-white hover:text-cyan-400">
             Home
           </Link>
-          <Link to="/teams" className="text-white hover:text-cyan-400">
-            Teams
+          <Link to="/board" className="text-white hover:text-cyan-400">
+            Board
           </Link>
           <Link to="/projects" className="text-white hover:text-cyan-400">
             Projects
