@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&family=Kantumruy+Pro:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
+
+@theme {
+  --font-karla: 'Karla', sans-serif;
+  --font-kantumruy: 'Kantumruy Pro', sans-serif;
+}
 
 /* Override theme colors so footer uses #3CBCD1 and #303030 */
 :root {
@@ -16,5 +22,5 @@
 body {
   margin: 0;
   background-color: white;
-  font-family: system-ui, sans-serif;
+  font-family: 'Kantumruy Pro', sans-serif;
 }

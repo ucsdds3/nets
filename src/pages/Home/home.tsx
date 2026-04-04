@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import buildingImgSrc from "../../assets/building.png";
+import buildingImgSrc from "../../assets/building-back.jpg";
 import stripeSrc from "../../assets/stripe.png";
 import labImg1Src from "../../assets/presentation.jpg";
 import labImg2Src from "../../assets/presentation.jpg";
@@ -15,7 +15,8 @@ export default function Home() {
         className="h-screen w-screen bg-cover bg-center flex items-center"
         style={{ backgroundImage: `url(${buildingImgSrc})` }}
       >
-        <div className="ml-20 max-w-2xl text-white">
+        <div className="ml-20 max-w-2xl text-white font-karla">
+
           <p className="mb-4 text-2xl tracking-tighter uppercase">
             <span className="text-cyan-300">LEARN</span>,{" "}
             <span className="text-gray-400">BUILD</span>,{" "}
@@ -40,7 +41,7 @@ export default function Home() {
       <div className="w-full bg-white py-20 flex flex-col items-center">
 
         {/* Tagline */}
-        <h2 className="text-2xl font-bold tracking-widest text-center uppercase mb-2 px-4">
+        <h2 className="text-2xl font-kantumruy tracking-widest text-center uppercase mb-2 px-4">
           Tough Tag Line About Mission / Value
           <br />
           Here. Like 1 Sentence, 2 Line Okokokokokok
@@ -62,14 +63,10 @@ export default function Home() {
           <div className="relative z-10 flex w-full bg-white shadow-md overflow-hidden h-[250px]">
             <div className="flex-1 p-0 flex flex-col justify-between">
               <div>
-                <p className="mt-6 ml-6 text-xl tracking-widest text-gray-500 uppercase mb-2">
+                <p className="mt-6 ml-6 text-xl tracking-widest text-gray-500 uppercase mb-2 font-karla">
                   What is NETS ?
                 </p>
-                  <p className="ml-6 font-bold text-2xl mb-2">                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <p className="text-2xl ml-6 text-gray-600 leading-relaxed">
-                  Suspendisse eu malesuada libero. Class aptent taciti sociosqu
-                  ad litora torquent per conubia nostra
+                  <p className="ml-6 font-karla text-2xl mb-2">NETS is dedicated to building and supporting the UCSD nanoengineering community of students, faculty, and corporate affiliates through personal and professional development events.
                 </p>
               </div>
               <div className="flex justify-start">
@@ -107,14 +104,10 @@ export default function Home() {
             </div>
             <div className="flex-1 p-0 flex flex-col justify-between">
               <div>
-                <p className="mt-6 ml-6 text-xl tracking-widest text-gray-500 uppercase mb-2">
+                <p className="mt-6 ml-6 text-xl tracking-widest text-gray-500 uppercase mb-2 font-karla">
                   How to Get Involved ?
                 </p>
-                  <p className="ml-6 font-bold text-2xl mb-2">                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <p className="text-2xl ml-6 text-gray-600 leading-relaxed">
-                  Suspendisse eu malesuada libero. Class aptent taciti sociosqu
-                  ad litora torquent per conubia nostra
+                  <p className="ml-6 font-karla text-2xl mb-2">To become a member, all you have to do is come to our events. If you have, you are already a NETS member. We do not charge fees, or ask for dues of any kind. During Fall Quarter, you can also join one of our annual Project Teams
                 </p>
               </div>
               <div className="flex justify-end">
@@ -139,7 +132,7 @@ export default function Home() {
 
         {/* Second tagline banner */}
         <div className="w-full bg-cyan-100 py-12 flex items-center justify-center mb-16">
-          <h2 className="text-2xl font-bold tracking-widest text-center uppercase px-4">
+          <h2 className="text-2xl font-kantumruy tracking-widest text-center uppercase px-4">
             Tough Tag Line About Mission / Value
             <br />
             Here. Like 1 Sentence, 2 Line Okokokokokok
