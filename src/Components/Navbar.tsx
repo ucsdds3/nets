@@ -9,22 +9,22 @@ export default function Navbar() {
           <img src={logoSrc} alt="NETS Logo" className="h-10" />
         </Link>
         <div className="flex items-center space-x-6">
-          <Link to="/" className="text-white hover:text-cyan-400">
+          <Link to="/" className="text-base-100 hover:text-cyan-400">
             Home
           </Link>
-          <Link to="/board" className="text-white hover:text-cyan-400">
+          <Link to="/board" className="text-base-100 hover:text-cyan-400">
             Board
           </Link>
-          <Link to="/projects" className="text-white hover:text-cyan-400">
+          <Link to="/projects" className="text-base-100 hover:text-cyan-400">
             Projects
           </Link>
-          <Link to="/events" className="text-white hover:text-cyan-400">
+          <Link to="/events" className="text-base-100 hover:text-cyan-400">
             Events
           </Link>
-          <Link to="/about" className="text-white hover:text-cyan-400">
+          <Link to="/about" className="text-base-100 hover:text-cyan-400">
             About
           </Link>
-          <Link to="/join" className="text-white hover:text-cyan-400">
+          <Link to="/join" className="text-base-100 hover:text-cyan-400">
             Join Us
           </Link>
         </div>

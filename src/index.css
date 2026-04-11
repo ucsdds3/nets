@@ -1,26 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&family=Kantumruy+Pro:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
-@plugin "daisyui";
 
-@theme {
-  --font-karla: 'Karla', sans-serif;
-  --font-kantumruy: 'Kantumruy Pro', sans-serif;
+/*
+  System appearance: DaisyUI applies `dark` when `prefers-color-scheme: dark` on
+  `:root:not([data-theme])`. Manual overrides: `data-theme="light"` | `data-theme="dark"`
+  (see ThemeProvider / useTheme in src/theme).
+*/
+@plugin "daisyui" {
+  themes:
+    light --default,
+    dark --prefersdark;
 }
 
-/* Override theme colors so footer uses #3CBCD1 and #303030 */
-:root {
-  --color-primary: #3cbcd1;
-  --color-neutral: #303030;
-  --color-primary-content: #ffffff;
-  --color-neutral-content: #e5e7eb;
+/* Light: primary white, secondary / accent as specified; default text black */
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
   --color-base-100: #ffffff;
   --color-base-200: #f3f4f6;
   --color-base-300: #e5e7eb;
-  --color-base-content: #1f2937;
+  --color-base-content: #000000;
+
+  --color-primary: #ffffff;
+  --color-primary-content: #000000;
+
+  --color-secondary: #90ccdd;
+  --color-secondary-content: #000000;
+
+  --color-accent: #3cbcd1;
+  --color-accent-content: #000000;
+
+  --color-neutral: #303030;
+  --color-neutral-content: #000000;
+}
+
+/* Dark: primary #323232 (e.g. Board); base stays light so global/footer tokens stay consistent; black base text */
+@plugin "daisyui/theme" {
+  name: "dark";
+  prefersdark: true;
+  color-scheme: dark;
+
+  --color-base-100: #ffffff;
+  --color-base-200: #f3f4f6;
+  --color-base-300: #e5e7eb;
+  --color-base-content: #000000;
+
+  --color-primary: #323232;
+  --color-primary-content: #000000;
+
+  --color-secondary: #90ccdd;
+  --color-secondary-content: #ffffff;
+
+  --color-accent: #3cbcd1;
+  --color-accent-content: #000000;
+
+  --color-neutral: #303030;
+  --color-neutral-content: #000000;
 }
 
 body {
   margin: 0;
-  background-color: white;
-  font-family: 'Kantumruy Pro', sans-serif;
+  background-color: var(--color-base-100);
+  color: var(--color-base-content);
+  font-family: system-ui, sans-serif;
 }

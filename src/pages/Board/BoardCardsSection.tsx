@@ -59,13 +59,13 @@ const MEMBERS = [
 
 export default function BoardCardsSection() {
   return (
-    <section className="relative bg-[#2a2a2a] py-16 px-6 md:px-10 z-1">
+    <section className="relative bg-primary py-16 px-6 md:px-10 z-1">
       {/* Optional geometric accent */}
 
       {Array.from({ length: 3 }).map((_, index) => (
         <div
           key={index}
-          className="absolute -left-40 w-[120%] h-50 opacity-30 pointer-events-none bg-primary/40"
+          className="absolute -left-40 w-[120%] h-50 opacity-30 pointer-events-none bg-accent/40"
           style={{ top: `calc(20rem + ${index * 40}rem)`, rotate: `${(-1) ** index * 5}deg` }}
         />
       ))}

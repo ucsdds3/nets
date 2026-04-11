@@ -14,33 +14,33 @@ export default function BoardMemberCard({
   linkedInUrl,
 }: BoardMemberCardProps) {
   return (
-    <article className="flex flex-col overflow-hidden bg-white shadow-lg transition hover:shadow-xl">
+    <article className="flex flex-col overflow-hidden bg-base-100 shadow-lg transition hover:shadow-xl">
       {/* Image section (~2/3) with gradient fade into text section */}
-      <div className="relative aspect-3/4 w-full shrink-0 overflow-hidden bg-neutral-200">
+      <div className="relative aspect-3/4 w-full shrink-0 overflow-hidden bg-base-200">
         {imagePlaceholder ? (
           <img src={imagePlaceholder} alt="" className="h-full w-full object-cover object-top" />
         ) : (
-          <div className="flex h-full w-full items-center justify-center text-neutral-400 text-xs">
+          <div className="flex h-full w-full items-center justify-center text-base-content/50 text-xs">
             Photo
           </div>
         )}
         {/* White-to-transparent gradient at bottom of image */}
         <div
-          className="absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-[#F8F8F8] to-transparent"
+          className="absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-base-200 to-transparent"
           aria-hidden
         />
       </div>
 
       {/* Text section (~1/3) - light grey background */}
-      <div className="flex flex-col gap-1 bg-[#F8F8F8] px-5 pb-6 pt-4">
-        <h3 className="font-bold text-xl text-black">{name}</h3>
+      <div className="flex flex-col gap-1 bg-base-200 px-5 pb-6 pt-4">
+        <h3 className="font-bold text-xl text-base-content">{name}</h3>
         <div className="flex items-center justify-between gap-3">
-          <p className="text-sm font-normal text-black">{title}</p>
+          <p className="text-sm font-normal text-base-content">{title}</p>
           <div className="flex shrink-0 items-center gap-3">
             {emailUrl && (
               <a
                 href={emailUrl}
-                className="text-black hover:opacity-70 transition"
+                className="text-base-content hover:opacity-70 transition"
                 aria-label="Email"
               >
                 <svg
@@ -62,7 +62,7 @@ export default function BoardMemberCard({
             {linkedInUrl && (
               <a
                 href={linkedInUrl}
-                className="text-black hover:opacity-70 transition"
+                className="text-base-content hover:opacity-70 transition"
                 aria-label="LinkedIn"
               >
                 <svg
