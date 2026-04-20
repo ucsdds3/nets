@@ -22,11 +22,11 @@ export function ThemeProvider({ children }: { readonly children: ReactNode }) {
     } catch {
       /* ignore */
     }
-    applyThemePreference(next);
+    applyThemePreference();
   }, []);
 
   useEffect(() => {
-    applyThemePreference(preference);
+    applyThemePreference();
   }, [preference]);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ export function ThemeProvider({ children }: { readonly children: ReactNode }) {
         next = e.newValue;
       }
       setPreferenceState(next);
-      applyThemePreference(next);
+      applyThemePreference();
     };
     globalThis.addEventListener("storage", onStorage);
     return () => globalThis.removeEventListener("storage", onStorage);
