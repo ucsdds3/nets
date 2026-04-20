@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>nets</title>
-    <!-- Theme before paint; key must match src/theme/constants.ts (THEME_STORAGE_KEY) -->
+    <!-- Theme before paint -->
     <script>
       (function () {
         try {
-          var k = "nets-theme-preference";
-          var p = localStorage.getItem(k);
           var root = document.documentElement;
-          if (p === "light") root.setAttribute("data-theme", "light");
-          else if (p === "dark") root.setAttribute("data-theme", "dark");
-        } catch (e) {}
+          root.dataset.theme = "light";
+        } catch (e) {
+          console.error("Failed to set initial light theme", e);
+        }
       })();
     </script>
 </head>
