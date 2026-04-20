@@ -6,8 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>nets</title>
-  <script type="module" crossorigin src="/nets/assets/index-CxuqC7Tw.js"></script>
-  <link rel="stylesheet" crossorigin href="/nets/assets/index-pYd7v3vU.css">
+    <!-- Theme before paint; key must match src/theme/constants.ts (THEME_STORAGE_KEY) -->
+    <script>
+      (function () {
+        try {
+          var k = "nets-theme-preference";
+          var p = localStorage.getItem(k);
+          var root = document.documentElement;
+          if (p === "light") root.setAttribute("data-theme", "light");
+          else if (p === "dark") root.setAttribute("data-theme", "dark");
+        } catch (e) {}
+      })();
+    </script>
+  <script type="module" crossorigin src="/nets/assets/index--SCjjCFW.js"></script>
+  <link rel="stylesheet" crossorigin href="/nets/assets/index-6f2tkcYj.css">
 </head>
   <body>
     <div id="root"></div>
