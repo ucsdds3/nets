@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 z-50 w-full border-b-2 border-accent/80 bg-neutral px-8 py-5 shadow-md">
       <div className="mx-auto flex w-full items-center justify-between">
         <Link to="/">
-          <img src={logoSrc} alt="NETS Logo" className="h-11 w-auto" />
+          <img src={logoSrc} alt="NETS Logo" className="h-7 w-auto" />
         </Link>
 
         <button
@@ -41,7 +41,7 @@ export default function Navbar() {
           ))}
           <Link
             to="/join"
-            className="rounded-full bg-accent px-5 py-2 text-base font-medium text-accent-content transition-colors hover:bg-accent/85"
+            className="rounded-full bg-accent px-5 py-2 text-base font-medium text-base-100 transition-colors hover:bg-accent/85"
           >
             Join Us
           </Link>
