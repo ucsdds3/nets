@@ -3,8 +3,9 @@ import netsLogo from "../assets/NETS.png";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-black text-base-100 rounded-t-4xl mt-[-30px]">
-      <div className="mx-auto max-w-6xl px-6 py-8">
+    <div className="mt-[-30px] w-full bg-neutral">
+      <footer className="w-full rounded-t-4xl bg-neutral text-base-100">
+        <div className="mx-auto max-w-6xl px-6 py-8">
         <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
           <div className="text-3xl font-semibold tracking-wide text-base-100">INTERESTED?</div>
           <a
@@ -90,7 +91,8 @@ export default function Footer() {
         <div className="mt-10 text-center text-xs text-base-100/70">
           Created by Data Science Student Society @ UC San Diego
         </div>
-      </div>
-    </footer>
+        </div>
+      </footer>
+    </div>
   );
 }
