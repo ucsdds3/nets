@@ -15,14 +15,14 @@ export default function Projects() {
       />
 
       <div className="relative mx-auto flex w-full flex-col">
-        <div className="relative grid min-h-screen items-start gap-6 px-4 md:grid-cols-[1fr_auto] md:px-0">
+        <div className="relative grid min-h-[300px] md:min-h-screen items-start gap-6 px-4 md:grid-cols-[1fr_auto] md:px-0">
           <h1 className="z-1 text-[12vw] leading-none font-extrabold tracking-[-0.06em] text-accent md:pl-10 md:text-[12vw]">
             PROJECTS
           </h1>
           <img
             src={heroImage}
             alt="NETS members with project poster"
-            className="absolute top-0 right-0 w-full max-w-[847px] self-end object-cover md:mt-6"
+            className="absolute top-0 right-0 w-[70vw] max-w-[847px] self-end object-cover md:mt-6 md:w-full"
           />
         </div>
 
