@@ -3,7 +3,7 @@ import netsLogo from "../assets/NETS.png";
 
 export default function Footer() {
   return (
-    <div className="mt-[-30px] w-full bg-neutral">
+    <div className="mt-[-30px] w-full bg-neutral ">
       <footer className="w-full rounded-t-4xl bg-neutral text-base-100">
         <div className="mx-auto max-w-6xl px-6 py-8">
         <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
