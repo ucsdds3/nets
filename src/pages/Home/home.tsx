@@ -26,7 +26,7 @@ export default function Home() {
           <p className="mb-4 text-2xl tracking-tighter uppercase">
             <span className="text-accent">LEARN</span>,{" "}
             <span className="text-secondary">BUILD</span>,{" "}
-            <span className="text-base-100">NANO WITH NETS</span>
+            <span className="text-base-100">INNOVATE WITH NETS</span>
           </p>
 
           <h1 className="text-5xl tracking-tighter font-bold leading-tight text-base-100">
@@ -44,17 +44,15 @@ export default function Home() {
       </div>
 
       {/* ── Mid-page section ── */}
-      <div className="w-full py-20 flex flex-col items-center bg-primary">
-        {/* Tagline */}
-        <h2 className="text-2xl font-karla tracking-widest text-center uppercase mb-2 px-4 text-secondary-content">
-          Tough Tag Line About Mission / Value
-          <br />
-          Here. Like 1 Sentence, 2 Line Okokokokokok
+      <div className="w-full py-20 flex flex-col items-center bg-base-100">
+        {/* Tagline 1 */}
+        <h2 className="text-3xl font-karla tracking-widest text-center uppercase mb-2 px-8 text-neutral max-w-4xl">
+          Facilitating growth, professional development, and mentorship for the engineering community at UC San Diego
         </h2>
-        <div className="w-px h-10 bg-secondary-content/30 mt-4 mb-16" />
+        <div className="w-px h-10 bg-neutral/20 mt-4 mb-16" />
 
         {/* Cards wrapper with stripe behind */}
-        <div className="relative w-full flex flex-col items-center gap-12 py-12 bg-primary">
+        <div className="relative w-full flex flex-col items-center gap-12 py-12">
           {/* Stripe background */}
           <img
             src={stripeSrc}
@@ -65,13 +63,13 @@ export default function Home() {
 
           {/* Card 1 — text left, image right */}
           <div className="w-3/4 mr-auto flex relative pl-8 pr-4">
-            <div className="relative z-10 flex w-full shadow-md overflow-hidden h-[250px] bg-primary">
+            <div className="relative z-10 flex w-full shadow-md overflow-hidden h-[250px] bg-base-100">
               <div className="flex-1 p-0 flex flex-col justify-between">
                 <div>
-                  <p className="mt-6 ml-6 text-xl tracking-widest text-secondary uppercase mb-2 font-karla">
+                  <p className="mt-6 ml-6 text-lg tracking-widest text-accent uppercase mb-2 font-karla font-semibold">
                     What is NETS ?
                   </p>
-                  <p className="ml-6 font-karla text-2xl mb-2 text-secondary-content">
+                  <p className="ml-6 mr-4 font-karla text-lg mb-2 text-neutral/80">
                     NETS is dedicated to building and supporting the UCSD nanoengineering community
                     of students, faculty, and corporate affiliates through personal and professional
                     development events.
@@ -85,7 +83,7 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="w-64 flex-shrink-0 bg-transparent">
+              <div className="w-64 flex-shrink-0">
                 <img src={labImg1Src} alt="NETS team" className="w-full h-full object-cover" />
               </div>
             </div>
@@ -93,23 +91,23 @@ export default function Home() {
 
           {/* Card 2 — image left, text right */}
           <div className="w-3/4 ml-auto flex relative pl-4 pr-8">
-            <div className="relative z-10 flex w-full bg-secondary-content shadow-md overflow-hidden h-[250px]">
+            <div className="relative z-10 flex w-full bg-base-100 shadow-md overflow-hidden h-[250px]">
               <div className="w-64 flex-shrink-0">
                 <img
                   src={labImg2Src}
-                  alt="Microchip research"
+                  alt="NETS members"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex-1 p-0 flex flex-col justify-between bg-primary">
+              <div className="flex-1 p-0 flex flex-col justify-between bg-base-100">
                 <div>
-                  <p className="mt-6 ml-6 text-xl tracking-widest text-secondary uppercase mb-2 font-karla">
+                  <p className="mt-6 ml-6 text-lg tracking-widest text-accent uppercase mb-2 font-karla font-semibold">
                     How to Get Involved ?
                   </p>
-                  <p className="ml-6 font-karla text-2xl mb-2 text-secondary-content">
+                  <p className="ml-6 mr-4 font-karla text-lg mb-2 text-neutral/80">
                     To become a member, all you have to do is come to our events. If you have, you
                     are already a NETS member. We do not charge fees, or ask for dues of any kind.
-                    During Fall Quarter, you can also join one of our annual Project Teams
+                    During Fall Quarter, you can also join one of our annual Project Teams.
                   </p>
                 </div>
                 <div className="flex justify-end">
@@ -128,16 +126,14 @@ export default function Home() {
         <div className="mb-16" />
 
         {/* Second tagline banner */}
-        <div className="w-full bg-primary py-12 flex items-center justify-center mb-16">
-          <h2 className="text-2xl font-karla tracking-widest text-center uppercase px-4 text-secondary-content">
-            Tough Tag Line About Mission / Value
-            <br />
-            Here. Like 1 Sentence, 2 Line Okokokokokok
+        <div className="w-full bg-base-100 py-12 flex items-center justify-center mb-16">
+          <h2 className="text-3xl font-karla tracking-widest text-center uppercase px-8 text-neutral max-w-4xl">
+            Advancing Nanoengineering at UCSD Through Community, Curiosity, and Real-World Experience
           </h2>
         </div>
 
         {/* 3-column photo grid */}
-        <div className="w-full max-w-4xl mx-auto grid grid-cols-3 gap-6 px-4">
+        <div className="w-full max-w-3xl mx-auto grid grid-cols-3 gap-6 px-4">
           {[
             { img: aboutImgSrc, label: "ABOUT US", to: "/about" },
             { img: eventsImgSrc, label: "EVENTS", to: "/events" },
@@ -150,7 +146,7 @@ export default function Home() {
                   alt={label}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute bottom-3 right-3 bg-secondary-content rounded-full w-7 h-7 flex items-center justify-center shadow text-accent font-bold text-sm">
+                <div className="absolute bottom-3 right-3 bg-base-100 rounded-full w-7 h-7 flex items-center justify-center shadow text-accent font-bold text-sm">
                   →
                 </div>
               </div>
