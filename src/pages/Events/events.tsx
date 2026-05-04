@@ -1,9 +1,16 @@
 import heroImage from "../../assets/programs/programs_header.png";
-
+import bigtop from "../../assets/programs/big-little-top.png";
+import bigbottom from "../../assets/programs/big-little-bottom.png";
+import welcometop from "../../assets/programs/welcome-top.png";
+import welcomebottom from "../../assets/programs/welcome-bottom.png";
+import careerfairtop from "../../assets/programs/fair-top.png";
+import careerfairbottom from "../../assets/programs/fair-bottom.png";
 type EventCard = {
   title: string;
   description: string;
   season: string;
+  imageTop: string;
+  imageBottom: string;
 };
 
 const EVENTS: EventCard[] = [
@@ -12,18 +19,24 @@ const EVENTS: EventCard[] = [
     description:
       "As our first event of each quarter, they bring our community together to share information on upcoming events, opportunities, and more",
     season: "QUARTERLY EVENT",
+    imageTop: welcometop,
+    imageBottom: welcomebottom,
   },
   {
     title: "BIG LITTLE PROGRAM",
     description:
       "Whether you want someone to guide you along your engineering journey, or help guide someone through theirs, our BigLittle Program creates mentor and mentee pairs who continue to work together year-to-year.",
     season: "YEAR ROUND EVENT",
+    imageTop: bigtop,
+    imageBottom: bigbottom,
   },
   {
     title: "CAREER FAIR",
     description:
       "Our annual career fair in collaboration with AIChE connects students with engineering companies in San Diego catered to our Nano and Chemical Engineering community.",
     season: "FALL QUARTER",
+    imageTop: careerfairtop,
+    imageBottom: careerfairbottom,
   },
 ];
 
@@ -57,11 +70,11 @@ export default function Events() {
                   <div
                     className={`relative min-h-[20vw] overflow-hidden rounded-[1vw] shadow-lg md:col-span-7 ${isFlipped ? "md:order-2" : ""}`}
                   >
-                    <div className="absolute inset-0 bg-linear-to-br from-slate-700 via-slate-800 to-slate-600" />
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(255,255,255,0.28),transparent_40%),radial-gradient(circle_at_80%_70%,rgba(60,188,209,0.22),transparent_45%)]" />
-                    <span className="absolute bottom-3 left-3 rounded bg-black/40 px-2 py-1 text-xs font-semibold tracking-wide text-white">
-                      TOP IMAGE
-                    </span>
+                    <img
+                      src={event.imageTop}
+                      alt={`${event.title} — top`}
+                      className="h-full w-full min-h-[20vw] object-cover"
+                    />
                   </div>
                   <div
                     className={`flex min-h-48 items-end rounded-[1vw] bg-base-100 p-5 shadow-md md:col-span-5 ${isFlipped ? "md:order-1" : ""}`}
@@ -88,11 +101,11 @@ export default function Events() {
                   <div
                     className={`relative min-h-[20vw] overflow-hidden rounded-[1vw] shadow-lg md:col-span-6 ${isFlipped ? "md:order-1" : ""}`}
                   >
-                    <div className="absolute inset-0 bg-linear-to-br from-slate-700 via-slate-800 to-slate-600" />
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(255,255,255,0.24),transparent_42%),radial-gradient(circle_at_30%_80%,rgba(60,188,209,0.24),transparent_48%)]" />
-                    <span className="absolute bottom-3 left-3 rounded bg-black/40 px-2 py-1 text-xs font-semibold tracking-wide text-white">
-                      BOTTOM IMAGE
-                    </span>
+                    <img
+                      src={event.imageBottom}
+                      alt={`${event.title} — bottom`}
+                      className="h-full w-full min-h-[20vw] object-cover"
+                    />
                   </div>
                 </div>
               </article>
