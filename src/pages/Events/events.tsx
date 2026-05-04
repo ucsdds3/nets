@@ -3,7 +3,6 @@ import heroImage from "../../assets/programs/programs_header.png";
 type EventCard = {
   title: string;
   description: string;
-  subtitle?: string;
   season: string;
 };
 
@@ -67,7 +66,7 @@ export default function Events() {
                   <div
                     className={`flex min-h-48 items-end rounded-[1vw] bg-base-100 p-5 shadow-md md:col-span-5 ${isFlipped ? "md:order-1" : ""}`}
                   >
-                    <h2 className="text-5xl leading-tight font-black text-accent">
+                    <h2 className="text-5xl leading-tight font-semibold text-accent">
                       {event.title}
                     </h2>
                   </div>
@@ -75,24 +74,19 @@ export default function Events() {
 
                 <div className="grid items-stretch gap-[2vw] md:grid-cols-12">
                   <div
-                    className={`flex min-h-[20vw] flex-col justify-between rounded-[1vw] bg-base-100 px-[2.5vw] py-[1vw] shadow-md md:col-span-5 ${isFlipped ? "md:order-2" : ""}`}
+                    className={`flex min-h-[20vw] flex-col justify-between rounded-[1vw] bg-base-100 px-[2.5vw] py-[1vw] shadow-md md:col-span-6 ${isFlipped ? "md:order-2" : ""}`}
                   >
-                    <p className="text-xl leading-relaxed text-base-content/80">
+                    <p className="text-2xl font-light leading-relaxed text-base-content/80">
                       {event.description}
                     </p>
                     <div className="mt-4">
-                      {event.subtitle ? (
-                        <p className="text-2xl font-semibold tracking-wider text-base-content/70">
-                          {event.subtitle}
-                        </p>
-                      ) : null}
                       <p className="text-2xl font-semibold tracking-wider text-base-content/70">
                         {event.season}
                       </p>
                     </div>
                   </div>
                   <div
-                    className={`relative min-h-[20vw] overflow-hidden rounded-[1vw] shadow-lg md:col-span-7 ${isFlipped ? "md:order-1" : ""}`}
+                    className={`relative min-h-[20vw] overflow-hidden rounded-[1vw] shadow-lg md:col-span-6 ${isFlipped ? "md:order-1" : ""}`}
                   >
                     <div className="absolute inset-0 bg-linear-to-br from-slate-700 via-slate-800 to-slate-600" />
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(255,255,255,0.24),transparent_42%),radial-gradient(circle_at_30%_80%,rgba(60,188,209,0.24),transparent_48%)]" />
