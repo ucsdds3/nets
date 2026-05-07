@@ -56,7 +56,7 @@ export default function Events() {
         <img
           src={heroImage}
           alt="NETS members with project poster"
-          className="absolute pt-[5vw] top-0 right-0 w-[70vw] max-w-[847px] self-end object-cover md:mt-6 md:w-full"
+          className="absolute pt-[10vw] top-0 right-0 w-[90vw] max-w-[847px] self-end object-cover md:mt-6 md:w-full"
         />
       </div>
       <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col gap-8 px-4 md:px-8 pb-10">
@@ -79,8 +79,16 @@ export default function Events() {
                   <div
                     className={`flex min-h-48 items-end rounded-[1vw] bg-base-100 p-5 shadow-md md:col-span-5 ${isFlipped ? "md:order-1" : ""}`}
                   >
-                    <h2 className="text-5xl leading-tight font-semibold text-accent">
-                      {event.title}
+                    <h2 className="font-nunito-sans text-5xl leading-tight font-semibold text-accent">
+                      {event.title === "BIG LITTLE PROGRAM" ? (
+                        <>
+                          <span className="text-6xl">BIG </span>
+                          <span className="text-3xl">LITTLE </span>
+                          <span>PROGRAM</span>
+                        </>
+                      ) : (
+                        event.title
+                      )}
                     </h2>
                   </div>
                 </div>
