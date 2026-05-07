@@ -49,17 +49,17 @@ export default function Events() {
         <div className="absolute -left-24 bottom-104 h-72 w-136 -rotate-12 bg-secondary/35" />
         <div className="absolute -right-24 bottom-20 h-80 w-136 rotate-12 bg-secondary/35" />
       </div>
-      <div className="pt-24 relative grid min-h-[300px] md:min-h-screen items-start gap-6 px-4 md:grid-cols-[1fr_auto] md:px-0">
-        <h1 className="z-1 text-[10vw] leading-none font-extrabold tracking-[-0.06em] text-accent  md:text-[10vw]">
+      <div className="relative grid items-start gap-4 pt-24 px-4 md:min-h-screen md:grid-cols-[1fr_auto] md:gap-6 md:px-0">
+        <h1 className="relative z-10 text-[10vw] leading-none font-extrabold tracking-[-0.06em] text-accent md:z-1 md:text-[10vw]">
           PROGRAMS
         </h1>
         <img
           src={heroImage}
           alt="NETS members with project poster"
-          className="absolute pt-[10vw] top-0 right-0 w-[90vw] max-w-[847px] self-end object-cover md:mt-6 md:w-full"
+          className="relative z-0 mt-2 w-full max-w-[847px] shrink-0 object-cover md:absolute md:top-0 md:right-0 md:z-auto md:mt-6 md:w-full md:max-w-[847px] md:self-end md:pt-[10vw]"
         />
       </div>
-      <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col gap-8 px-4 md:px-8 pb-10">
+      <div className="relative z-10 mx-auto mt-8 flex w-full max-w-5xl flex-col gap-8 px-4 pb-10 md:mt-0 md:px-8">
         <div className="grid gap-[15vw]">
           {EVENTS.map((event) => {
             const isFlipped = event.title === "BIG LITTLE PROGRAM";
