@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "title": "WELCOME BACK EVENT",
+      "description": "As our first event of each quarter, they bring our community together to share information on upcoming events, opportunities, and more",
+      "season": "QUARTERLY EVENT",
+      "imageTop": "welcome-top.png",
+      "imageBottom": "welcome-bottom.png",
+      "flippedLayout": false
+    },
+    {
+      "title": "BIG LITTLE PROGRAM",
+      "description": "Whether you want someone to guide you along your engineering journey, or help guide someone through theirs, our BigLittle Program creates mentor and mentee pairs who continue to work together year-to-year.",
+      "season": "YEAR ROUND EVENT",
+      "imageTop": "big-little-top.png",
+      "imageBottom": "big-little-bottom.png",
+      "flippedLayout": true
+    },
+    {
+      "title": "CAREER FAIR",
+      "description": "Our annual career fair in collaboration with AIChE connects students with engineering companies in San Diego catered to our Nano and Chemical Engineering community.",
+      "season": "FALL QUARTER",
+      "imageTop": "fair-top.png",
+      "imageBottom": "fair-bottom.png",
+      "flippedLayout": false
+    }
+  ]
+}

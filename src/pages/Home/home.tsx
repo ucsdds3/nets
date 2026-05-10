@@ -15,13 +15,11 @@ export default function Home() {
         className="relative h-screen w-screen bg-cover bg-center flex items-center bg-primary"
         style={{ backgroundImage: `url(${buildingImgSrc})` }}
       >
-        {/* Theme-aware tint so hero still reads when primary / base tokens change */}
-        {/*
+        {/* Subtle overlay to improve hero text contrast */}
         <div
-          className="absolute inset-0 bg-linear-to-t from-primary-100/50 via-primary-100/25 to-transparent pointer-events-none"
+          className="absolute inset-0 bg-black/40 pointer-events-none"
           aria-hidden
         />
-        */}
         <div className="relative z-10 ml-20 max-w-2xl font-karla text-secondary-content drop-shadow-md">
           <p className="mb-4 text-2xl tracking-tighter uppercase">
             <span className="text-accent">LEARN</span>,{" "}

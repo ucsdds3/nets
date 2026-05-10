@@ -1,0 +1,48 @@
+{
+  "mission": {
+    "titleLines": ["OUR", "MISSION"],
+    "tagline": "Building the Future of Nanoengineering — Together.",
+    "heroImage": "about-mission-hero.jpg",
+    "heroAlt": "NETS team group at sunset"
+  },
+  "valuesSectionTitle": "OUR VALUES",
+  "values": [
+    {
+      "title": "GROWTH",
+      "description": "Guiding our community through personal and professional growth is our priority and a cornerstone of our events."
+    },
+    {
+      "title": "INNOVATION",
+      "description": "Through frequent research, technical, and outreach opportunities, we aim to embody the spirit of innovation and encourage curiosity."
+    },
+    {
+      "title": "OPPORTUNITY",
+      "description": "Our programs and events are great stepping stones toward developing foundational engineering knowledge."
+    }
+  ],
+  "whatWeDoSectionTitle": "WHAT WE DO",
+  "whatWeDo": [
+    {
+      "label": "PROJECTS",
+      "image": "about-projects.jpg",
+      "alt": "Students presenting at a NETS project event"
+    },
+    {
+      "label": "MENTORSHIP",
+      "image": "about-mentorship.jpg",
+      "alt": "NETS members during a mentorship gathering"
+    },
+    {
+      "label": "COMMUNITY",
+      "image": "about-community.jpg",
+      "alt": "Students networking at a NETS community event"
+    }
+  ],
+  "sponsor": {
+    "image": "about-sponsor.jpg",
+    "imageAlt": "NETS members for sponsorship section",
+    "heading": "WANT TO SPONSOR US ?",
+    "body": "Your funding helps our ambitions to build a community and support student careers - all while charging no membership fee.",
+    "buttonLabel": "SPONSOR NETS"
+  }
+}
