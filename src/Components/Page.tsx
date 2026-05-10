@@ -6,7 +6,9 @@ export default function Page() {
   return (
     <div className="min-w-0 overflow-x-hidden">
       <Navbar />
-      <Outlet />
+      <main className="min-w-0">
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );

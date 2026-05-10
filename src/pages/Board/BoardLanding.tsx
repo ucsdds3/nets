@@ -1,4 +1,4 @@
-import boardImgSrc from "../../assets/header-image.png";
+import boardImgSrc from "../../assets/board/board-members-hero.png";
 export default function BoardLanding() {
   return (
     <section className="relative h-screen flex overflow-hidden bg-primary">
@@ -11,8 +11,8 @@ export default function BoardLanding() {
       {/* Background image placeholder (building/sunset) */}
 
       {/* Title */}
-      <div className="w-full relative z-20 px-2 pt-24 pb-12">
-        <h1 className="text-[10vw] font-bold text-secondary-content tracking-tight drop-shadow-md">
+      <div className="relative z-20 w-full px-4 pt-24 pb-12 md:pl-10">
+        <h1 className="text-[10vw] font-bold tracking-tight text-accent drop-shadow-md">
           BOARD MEMBERS
         </h1>
         <img

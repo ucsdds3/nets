@@ -4,7 +4,7 @@ import { featuredProject, pastProjects } from "./ProjectCardData";
 
 export default function Projects() {
   return (
-    <section className="relative mb-[30px] overflow-hidden bg-[#efefef] pt-28 pb-20">
+    <section className="relative mb-[30px] overflow-hidden bg-[#efefef] pb-20">
       <div
         className="pointer-events-none absolute inset-0 opacity-95"
         style={{
@@ -15,14 +15,14 @@ export default function Projects() {
       />
 
       <div className="relative mx-auto flex w-full flex-col">
-        <div className="relative grid min-h-[300px] md:min-h-screen items-start gap-6 px-4 md:grid-cols-[1fr_auto] md:px-0">
-          <h1 className="z-1 text-[12vw] leading-none font-extrabold tracking-[-0.06em] text-accent md:pl-10 md:text-[12vw]">
+        <div className="relative grid min-h-[min(420px,55vh)] items-start gap-6 px-4 pt-24 md:min-h-screen md:grid-cols-[1fr_auto] md:pl-10 md:pr-4">
+          <h1 className="relative z-20 text-[10vw] font-bold tracking-tight text-accent md:text-[10vw]">
             PROJECTS
           </h1>
           <img
             src={heroImage}
             alt="NETS members with project poster"
-            className="absolute top-0 right-0 w-[70vw] max-w-[847px] self-end object-cover md:mt-6 md:w-full"
+            className="pointer-events-none absolute top-40 right-0 z-0 h-[min(40vh,350px)] w-[min(83vw,924px)] max-w-none object-cover object-top-right md:top-64 md:h-[min(60vh,700px)] md:w-[min(81vw,1036px)]"
           />
         </div>
 
@@ -34,7 +34,11 @@ export default function Projects() {
           </h2>
 
           {pastProjects.map((project, index) => (
-            <ProjectsCard key={project.title} project={project} align={index % 2 === 0 ? "right" : "left"} />
+            <ProjectsCard
+              key={project.title}
+              project={project}
+              align={index % 2 === 0 ? "right" : "left"}
+            />
           ))}
         </div>
       </div>

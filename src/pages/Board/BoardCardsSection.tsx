@@ -1,61 +1,16 @@
 import BoardMemberCard from "./BoardMemberCard";
-import sarineImg from "../../assets/image 10777.png";
-const MEMBERS = [
-  {
-    name: "Sarine Krikorian",
-    title: "President",
-    emailUrl: "sarine@ucsd.edu",
-    linkedinUrl: "https://www.linkedin.com/in/sarine-krikorian-b2b1b1b1b1b1/",
-  },
-  {
-    name: "Sarine Krikorian",
-    title: "President",
-    emailUrl: "sarine@ucsd.edu",
-    linkedinUrl: "https://www.linkedin.com/in/sarine-krikorian-b2b1b1b1b1b1/",
-  },
-  {
-    name: "Sarine Krikorian",
-    title: "President",
-    emailUrl: "sarine@ucsd.edu",
-    linkedinUrl: "https://www.linkedin.com/in/sarine-krikorian-b2b1b1b1b1b1/",
-  },
-  {
-    name: "Sarine Krikorian",
-    title: "President",
-    emailUrl: "sarine@ucsd.edu",
-    linkedinUrl: "https://www.linkedin.com/in/sarine-krikorian-b2b1b1b1b1b1/",
-  },
-  {
-    name: "Sarine Krikorian",
-    title: "President",
-    emailUrl: "sarine@ucsd.edu",
-    linkedinUrl: "https://www.linkedin.com/in/sarine-krikorian-b2b1b1b1b1b1/",
-  },
-  {
-    name: "Sarine Krikorian",
-    title: "President",
-    emailUrl: "sarine@ucsd.edu",
-    linkedinUrl: "https://www.linkedin.com/in/sarine-krikorian-b2b1b1b1b1b1/",
-  },
-  {
-    name: "Sarine Krikorian",
-    title: "President",
-    emailUrl: "sarine@ucsd.edu",
-    linkedinUrl: "https://www.linkedin.com/in/sarine-krikorian-b2b1b1b1b1b1/",
-  },
-  {
-    name: "Sarine Krikorian",
-    title: "President",
-    emailUrl: "sarine@ucsd.edu",
-    linkedinUrl: "https://www.linkedin.com/in/sarine-krikorian-b2b1b1b1b1b1/",
-  },
-  {
-    name: "Sarine Krikorian",
-    title: "President",
-    emailUrl: "sarine@ucsd.edu",
-    linkedinUrl: "https://www.linkedin.com/in/sarine-krikorian-b2b1b1b1b1b1/",
-  },
-];
+import boardMembersData from "./board-members.json";
+import type { BoardMemberRecord } from "./board-members.types";
+import { boardImageSrc } from "./board-images";
+
+type BoardMemberResolved = BoardMemberRecord & {
+  imageSrc: string;
+};
+
+const MEMBERS: BoardMemberResolved[] = boardMembersData.members.map((m) => ({
+  ...m,
+  imageSrc: boardImageSrc(m.image),
+}));
 
 export default function BoardCardsSection() {
   return (
@@ -73,10 +28,10 @@ export default function BoardCardsSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {MEMBERS.map((member) => (
             <BoardMemberCard
-              key={member.name}
+              key={member.id}
               name={member.name}
               title={member.title}
-              imagePlaceholder={sarineImg}
+              imagePlaceholder={member.imageSrc}
               emailUrl={member.emailUrl}
               linkedInUrl={member.linkedinUrl}
             />

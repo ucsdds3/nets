@@ -1,0 +1,58 @@
+{
+  "members": [
+    {
+      "id": "sarine-krikorian",
+      "name": "Sarine Krikorian",
+      "title": "President",
+      "image": "sarine-krikorian.png"
+    },
+    {
+      "id": "marc-levy",
+      "name": "Marc Levy",
+      "title": "VP Finance",
+      "image": "marc-levy.png"
+    },
+    {
+      "id": "sean-murray",
+      "name": "Sean Murray",
+      "title": "VP Operations",
+      "image": "sean-murray.png"
+    },
+    {
+      "id": "octavia-braun",
+      "name": "Octavia Braun",
+      "title": "Department Chair",
+      "image": "octavia-braun.png"
+    },
+    {
+      "id": "dion-walker",
+      "name": "Dion Walker",
+      "title": "Internal Committee",
+      "image": "dion-walker.png"
+    },
+    {
+      "id": "shanell-rincon",
+      "name": "Shanell Rincon",
+      "title": "Internal Committee",
+      "image": "shanell-rincon.png"
+    },
+    {
+      "id": "sindu-vipparthy",
+      "name": "Sindu Vipparthy",
+      "title": "Internal Committee",
+      "image": "sindu-vipparthy.png"
+    },
+    {
+      "id": "davin-rozsa",
+      "name": "Davin Rozsa",
+      "title": "External Committee",
+      "image": "davin-rozsa.png"
+    },
+    {
+      "id": "paige-schumsky",
+      "name": "Paige Schumsky",
+      "title": "External Committee",
+      "image": "paige-schumsky.png"
+    }
+  ]
+}
