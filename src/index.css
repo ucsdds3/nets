@@ -60,6 +60,11 @@
   --color-neutral-content: #000000;
 }
 
+@theme {
+  --font-karla: "Karla", sans-serif;
+  --font-nunito-sans: "Nunito Sans", sans-serif;
+}
+
 body {
   margin: 0;
   background-color: var(--color-base-100);
