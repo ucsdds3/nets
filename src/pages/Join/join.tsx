@@ -25,7 +25,7 @@ export default function Join() {
             <h2 className="text-5xl font-extrabold tracking-tight text-accent uppercase font-karla">
               Join Us
             </h2>
-            <p className="text-base text-neutral/80 font-karla max-w-xs">
+            <p className="text-xl text-neutral/80 font-nunito-sans max-w-xs leading-snug">
               Be part of the NETS community in one click by joining our Discord!
             </p>
             <div className="mt-2">
@@ -33,7 +33,7 @@ export default function Join() {
                 href="https://discord.gg/hRwCPVuxJQ"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center rounded-full border-2 border-neutral px-8 py-2 text-sm font-bold tracking-widest text-neutral transition-colors hover:bg-neutral hover:text-base-100 font-karla uppercase"
+                className="inline-flex items-center justify-center rounded-full border-2 border-accent px-8 py-2 text-sm font-bold tracking-widest text-neutral transition-colors hover:bg-accent hover:text-accent-content font-karla uppercase"
               >
                 Join our Discord
               </a>
@@ -45,7 +45,7 @@ export default function Join() {
             <img
               src={joinImg1}
               alt="NETS members at the beach"
-              className="w-full h-72 object-cover rounded-sm shadow-md"
+              className="w-full h-72 object-cover rounded-2xl border-4 border-accent shadow-md"
             />
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function Join() {
             <img
               src={joinImg2}
               alt="NETS members at dinner"
-              className="w-full h-72 object-cover rounded-sm shadow-md"
+              className="w-full h-72 object-cover rounded-2xl border-4 border-accent shadow-md"
             />
           </div>
 
@@ -74,7 +74,7 @@ export default function Join() {
                 href="mailto:netsatucsd@gmail.com"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center rounded-full border-2 border-neutral px-8 py-2 text-sm font-bold tracking-widest text-neutral transition-colors hover:bg-neutral hover:text-base-100 font-karla uppercase"
+                className="inline-flex items-center justify-center rounded-full border-2 border-accent px-8 py-2 text-sm font-bold tracking-widest text-neutral transition-colors hover:bg-accent hover:text-accent-content font-karla uppercase"
               >
                 Subscribe to our Newsletter
               </a>

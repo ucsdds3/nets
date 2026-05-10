@@ -9,9 +9,6 @@ export default {
       colors: {
         'off-black': '#303030', // Now you can use bg-off-black
       },
-      fontFamily: {
-        karla: ['Karla', 'sans-serif'],
-      },
     },
   },
   plugins: [],
