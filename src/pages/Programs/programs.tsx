@@ -1,20 +1,20 @@
 import heroImage from "../../assets/programs/programs_header.png";
-import programEventsData from "./program-events.json";
-import type { ProgramEventRecord } from "./program-events.types";
+import programsData from "./programs.json";
+import type { ProgramRecord } from "./programs.types";
 import { programImageSrc } from "./program-images";
 
-type EventCard = ProgramEventRecord & {
+type ProgramCard = ProgramRecord & {
   imageTop: string;
   imageBottom: string;
 };
 
-const EVENTS: EventCard[] = programEventsData.events.map((e) => ({
-  ...e,
-  imageTop: programImageSrc(e.imageTop),
-  imageBottom: programImageSrc(e.imageBottom),
+const PROGRAMS: ProgramCard[] = programsData.programs.map((program) => ({
+  ...program,
+  imageTop: programImageSrc(program.imageTop),
+  imageBottom: programImageSrc(program.imageBottom),
 }));
 
-export default function Events() {
+export default function Programs() {
   return (
     <section className="relative min-h-screen w-full overflow-x-hidden bg-base-200 pb-16 overflow-y-hidden">
       <div className="pointer-events-none absolute inset-0">
@@ -35,18 +35,18 @@ export default function Events() {
       </div>
       <div className="relative z-10 mx-auto mt-8 flex w-full max-w-5xl flex-col gap-8 px-4 pb-10 md:mt-56 lg:max-w-6xl lg:mt-0 lg:px-8 xl:max-w-7xl 2xl:max-w-360 2xl:px-12">
         <div className="grid gap-[10vw]">
-          {EVENTS.map((event) => {
-            const isFlipped = event.flippedLayout;
+          {PROGRAMS.map((program) => {
+            const isFlipped = program.flippedLayout;
 
             return (
-              <article key={event.title} className="grid gap-[2vw]">
+              <article key={program.title} className="grid gap-[2vw]">
                 <div className="grid items-stretch gap-[2vw] md:grid-cols-12">
                   <div
                     className={`relative min-h-[20vw] overflow-hidden rounded-[1vw] shadow-lg md:col-span-7 ${isFlipped ? "md:order-2" : ""}`}
                   >
                     <img
-                      src={event.imageTop}
-                      alt={`${event.title} — top`}
+                      src={program.imageTop}
+                      alt={`${program.title} — top`}
                       className="h-full w-full min-h-[20vw] object-cover"
                     />
                   </div>
@@ -54,7 +54,7 @@ export default function Events() {
                     className={`flex min-h-48 items-end rounded-[1vw] bg-base-100 p-5 shadow-md md:col-span-5 ${isFlipped ? "md:order-1" : ""}`}
                   >
                     <h2 className="font-nunito-sans text-[clamp(20px,10vw,75px)] leading-tight font-semibold text-accent">
-                      {event.title}
+                      {program.title}
                     </h2>
                   </div>
                 </div>
@@ -64,11 +64,11 @@ export default function Events() {
                     className={`flex min-h-[20vw] flex-col justify-between rounded-[1vw] bg-base-100 px-[2.5vw] py-[1vw] shadow-md md:col-span-6 ${isFlipped ? "md:order-2" : ""}`}
                   >
                     <p className="text-2xl font-light leading-relaxed text-base-content/80">
-                      {event.description}
+                      {program.description}
                     </p>
                     <div className="mt-4">
                       <p className="text-2xl font-semibold tracking-wider text-base-content/70">
-                        {event.season}
+                        {program.season}
                       </p>
                     </div>
                   </div>
@@ -76,8 +76,8 @@ export default function Events() {
                     className={`relative min-h-[20vw] overflow-hidden rounded-[1vw] shadow-lg md:col-span-6 ${isFlipped ? "md:order-1" : ""}`}
                   >
                     <img
-                      src={event.imageBottom}
-                      alt={`${event.title} — bottom`}
+                      src={program.imageBottom}
+                      alt={`${program.title} — bottom`}
                       className="h-full w-full min-h-[20vw] object-cover"
                     />
                   </div>

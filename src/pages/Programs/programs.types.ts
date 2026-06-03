@@ -1,4 +1,4 @@
-export type ProgramEventRecord = {
+export type ProgramRecord = {
   title: string;
   description: string;
   season: string;
@@ -7,6 +7,6 @@ export type ProgramEventRecord = {
   flippedLayout: boolean;
 };
 
-export type ProgramEventsFile = {
-  events: ProgramEventRecord[];
+export type ProgramsFile = {
+  programs: ProgramRecord[];
 };

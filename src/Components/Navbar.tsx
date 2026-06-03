@@ -11,7 +11,7 @@ export default function Navbar() {
     { to: "/", label: "Home" },
     { to: "/board", label: "Board" },
     { to: "/projects", label: "Projects" },
-    { to: "/events", label: "Programs" },
+    { to: "/programs", label: "Programs" },
     { to: "/about", label: "About" },
   ];
 

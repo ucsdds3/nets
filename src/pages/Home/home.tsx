@@ -4,7 +4,7 @@ import stripeSrc from "../../assets/home/stripe.png";
 import labImg1Src from "../../assets/home/presentation.jpg";
 import labImg2Src from "../../assets/home/presentation.jpg";
 import aboutImgSrc from "../../assets/home/aboutus.png";
-import eventsImgSrc from "../../assets/home/microchip.png";
+import programsImgSrc from "../../assets/home/microchip.png";
 import projectsImgSrc from "../../assets/home/presentation.jpg";
 
 export default function Home() {
@@ -134,7 +134,7 @@ export default function Home() {
         <div className="w-full max-w-3xl mx-auto grid grid-cols-3 gap-6 px-4">
           {[
             { img: aboutImgSrc, label: "ABOUT US", to: "/about" },
-            { img: eventsImgSrc, label: "EVENTS", to: "/events" },
+            { img: programsImgSrc, label: "PROGRAMS", to: "/programs" },
             { img: projectsImgSrc, label: "PROJECTS", to: "/projects" },
           ].map(({ img, label, to }) => (
             <Link to={to} key={label} className="flex flex-col items-center group">
