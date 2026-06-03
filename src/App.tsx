@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/home";
 import Teams from "./pages/Board/Board";
 import Projects from "./pages/Projects/projects";
@@ -9,7 +9,7 @@ import Page from "./Components/Page";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/nets/">
+    <HashRouter>
       <Routes>
         <Route element={<Page />}>
           <Route path="/" element={<Home />} />
@@ -20,6 +20,6 @@ export default function App() {
           <Route path="/join" element={<Join />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

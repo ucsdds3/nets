@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { SiInstagram, SiDiscord, SiLinkedin } from "react-icons/si";
 import netsLogo from "../assets/shared/NETS.png";
 
@@ -8,12 +9,12 @@ export default function Footer() {
         <div className="mx-auto max-w-6xl px-6 py-8">
           <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
             <div className="text-3xl font-semibold tracking-wide text-base-100">INTERESTED?</div>
-            <a
-              href={""}
-              className="inline-flex items-center justify-center rounded-full border-2 border-accent px-10 py-2 text-sm font-semibold text-accent transition-colors hover:bg-accent hover:text-base-content bg-base-100"
+            <Link
+              to="/join"
+              className="inline-flex items-center justify-center rounded-full border-2 border-accent bg-base-100 px-10 py-2 text-sm font-semibold text-accent transition-colors hover:bg-accent hover:text-base-content"
             >
               JOIN US
-            </a>
+            </Link>
           </div>
 
           <div className="mt-6 h-px w-full bg-base-100/30" />
@@ -34,19 +35,19 @@ export default function Footer() {
 
             <div>
               <div className="text-lg font-semibold">Explore</div>
-              <nav className="mt-3 space-y-1 text-sm text-base-100/80 flex flex-col">
-                <a className="hover:text-accent w-fit" href={""}>
+              <nav className="mt-3 flex flex-col space-y-1 text-sm text-base-100/80">
+                <Link className="w-fit hover:text-accent" to="/board">
                   Teams
-                </a>
-                <a className="hover:text-accent w-fit" href={""}>
+                </Link>
+                <Link className="w-fit hover:text-accent" to="/projects">
                   Projects
-                </a>
-                <a className="hover:text-accent w-fit" href={""}>
+                </Link>
+                <Link className="w-fit hover:text-accent" to="/programs">
                   Programs
-                </a>
-                <a className="hover:text-accent w-fit" href={""}>
+                </Link>
+                <Link className="w-fit hover:text-accent" to="/about">
                   About
-                </a>
+                </Link>
               </nav>
             </div>
 
