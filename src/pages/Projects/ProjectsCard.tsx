@@ -1,4 +1,4 @@
-import type { ProjectCardData } from "./ProjectCardData";
+import type { ProjectCardData } from "./projects.types";
 
 type ProjectsCardProps = {
   project: ProjectCardData;

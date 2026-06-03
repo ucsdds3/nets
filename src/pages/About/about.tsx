@@ -102,12 +102,14 @@ export default function About() {
             <p className="mt-6 max-w-xl font-nunito-sans text-xl font-medium leading-relaxed text-[#4e4e4e] md:text-[32px] md:leading-snug">
               {sponsor.body}
             </p>
-            <button
-              type="button"
-              className="cursor-pointer mt-8 inline-flex items-center gap-2 self-end bg-white px-6 py-3 font-nunito-sans text-2xl font-medium uppercase tracking-tight text-accent shadow-sm transition-colors hover:bg-accent hover:text-accent-content md:mt-auto md:text-[32px]"
+            <a
+              href={sponsor.formUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-2 self-end bg-white px-6 py-3 font-nunito-sans text-2xl font-medium uppercase tracking-tight text-accent shadow-sm transition-colors hover:bg-accent hover:text-accent-content md:mt-auto md:text-[32px]"
             >
               {sponsor.buttonLabel} <span aria-hidden>→</span>
-            </button>
+            </a>
           </div>
         </div>
       </section>

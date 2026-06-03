@@ -1,21 +1,14 @@
-import aboutCommunity from "../../assets/about-community.jpg";
-import aboutMentorship from "../../assets/about-mentorship.jpg";
-import aboutMissionHero from "../../assets/about-mission-hero.jpg";
-import aboutProjects from "../../assets/about-projects.jpg";
-import aboutSponsor from "../../assets/about-sponsor.jpg";
+import { createAssetImageResolver } from "../../utils/resolveAssetImage";
 
-const ABOUT_IMAGE_BY_FILE: Record<string, string> = {
-  "about-community.jpg": aboutCommunity,
-  "about-mentorship.jpg": aboutMentorship,
-  "about-mission-hero.jpg": aboutMissionHero,
-  "about-projects.jpg": aboutProjects,
-  "about-sponsor.jpg": aboutSponsor,
-};
+const ABOUT_ASSETS = "../../assets/about";
 
-export function aboutImageSrc(fileName: string): string {
-  const src = ABOUT_IMAGE_BY_FILE[fileName];
-  if (src === undefined) {
-    throw new Error(`Unknown about page image: ${fileName}`);
-  }
-  return src;
-}
+const aboutImages = import.meta.glob("../../assets/about/*", {
+  eager: true,
+  import: "default",
+}) as Record<string, string>;
+
+export const aboutImageSrc = createAssetImageResolver(
+  aboutImages,
+  ABOUT_ASSETS,
+  "about"
+);
