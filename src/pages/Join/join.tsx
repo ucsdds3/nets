@@ -7,8 +7,8 @@
 //   )
 // }
 
-import joinImg1 from "../../assets/join_us1.jpg";
-import joinImg2 from "../../assets/join_us2.jpg";
+import joinImg1 from "../../assets/join/join_us1.jpg";
+import joinImg2 from "../../assets/join/join_us2.jpg";
 
 export default function Join() {
   return (

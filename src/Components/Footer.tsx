@@ -1,5 +1,5 @@
 import { SiInstagram, SiDiscord, SiLinkedin } from "react-icons/si";
-import netsLogo from "../assets/NETS.png";
+import netsLogo from "../assets/shared/NETS.png";
 
 export default function Footer() {
   return (
@@ -42,7 +42,7 @@ export default function Footer() {
                   Projects
                 </a>
                 <a className="hover:text-accent w-fit" href={""}>
-                  Events
+                  Programs
                 </a>
                 <a className="hover:text-accent w-fit" href={""}>
                   About

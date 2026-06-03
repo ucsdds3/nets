@@ -26,5 +26,6 @@ export type AboutContent = {
     heading: string;
     body: string;
     buttonLabel: string;
+    formUrl: string;
   };
 };

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import buildingImgSrc from "../../assets/building-back.jpg";
-import stripeSrc from "../../assets/stripe.png";
-import labImg1Src from "../../assets/presentation.jpg";
-import labImg2Src from "../../assets/presentation.jpg";
-import aboutImgSrc from "../../assets/aboutus.png";
-import eventsImgSrc from "../../assets/microchip.png";
-import projectsImgSrc from "../../assets/presentation.jpg";
+import buildingImgSrc from "../../assets/home/building-back.jpg";
+import stripeSrc from "../../assets/home/stripe.png";
+import labImg1Src from "../../assets/home/presentation.jpg";
+import labImg2Src from "../../assets/home/presentation.jpg";
+import aboutImgSrc from "../../assets/home/aboutus.png";
+import eventsImgSrc from "../../assets/home/microchip.png";
+import projectsImgSrc from "../../assets/home/presentation.jpg";
 
 export default function Home() {
   return (
@@ -34,7 +34,7 @@ export default function Home() {
           </h1>
 
           <Link to="/join">
-            <button className="mt-8 rounded-md bg-accent px-6 py-3 font-semibold text-accent-content transition-colors hover:bg-accent/80">
+            <button className="mt-8 cursor-pointer rounded-md bg-accent px-6 py-3 font-semibold text-accent-content transition-colors hover:bg-accent/80">
               JOIN US
             </button>
           </Link>
@@ -75,7 +75,7 @@ export default function Home() {
                 </div>
                 <div className="flex justify-start">
                   <Link to="/board">
-                    <button className="flex items-center justify-center gap-2 bg-accent text-accent-content text-sm font-semibold px-5 py-2 w-[140px] transition-colors hover:bg-accent/80">
+                    <button className="flex cursor-pointer items-center justify-center gap-2 bg-accent text-accent-content text-sm font-semibold px-5 py-2 w-[140px] transition-colors hover:bg-accent/80">
                       OUR TEAM <span>→</span>
                     </button>
                   </Link>
@@ -110,7 +110,7 @@ export default function Home() {
                 </div>
                 <div className="flex justify-end">
                   <Link to="/join">
-                    <button className="flex items-center justify-center gap-2 bg-accent text-accent-content text-sm font-semibold px-5 py-2 w-[140px] transition-colors hover:bg-accent/80">
+                    <button className="flex cursor-pointer items-center justify-center gap-2 bg-accent text-accent-content text-sm font-semibold px-5 py-2 w-[140px] transition-colors hover:bg-accent/80">
                       JOIN US <span>→</span>
                     </button>
                   </Link>

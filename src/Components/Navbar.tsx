@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logoSrc from "../assets/logo.svg";
+import logoSrc from "../assets/shared/logo.svg";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,7 @@ export default function Navbar() {
     { to: "/", label: "Home" },
     { to: "/board", label: "Board" },
     { to: "/projects", label: "Projects" },
-    { to: "/events", label: "Events" },
+    { to: "/events", label: "Programs" },
     { to: "/about", label: "About" },
   ];
 

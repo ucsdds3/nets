@@ -1,6 +1,18 @@
 import heroImage from "../../assets/projects/projects-hero.png";
 import ProjectsCard from "./ProjectsCard";
-import { featuredProject, pastProjects } from "./ProjectCardData";
+import { projectImageSrc } from "./project-images";
+import projectsData from "./projects.json";
+import type { ProjectCardData, ProjectRecord } from "./projects.types";
+
+function toProjectCard(record: ProjectRecord): ProjectCardData {
+  return {
+    ...record,
+    image: projectImageSrc(record.image),
+  };
+}
+
+const featuredProject = toProjectCard(projectsData.featured);
+const pastProjects = projectsData.pastProjects.map(toProjectCard);
 
 export default function Projects() {
   return (
@@ -15,7 +27,7 @@ export default function Projects() {
       />
 
       <div className="relative mx-auto flex w-full flex-col">
-        <div className="relative grid min-h-[min(420px,55vh)] items-start gap-6 px-4 pt-24 md:min-h-screen md:grid-cols-[1fr_auto] md:pl-10 md:pr-4">
+        <div className="relative mb-20  grid min-h-[min(420px,55vh)] items-start gap-6 px-4 pt-24 md:min-h-screen md:grid-cols-[1fr_auto] md:pl-10 md:pr-4">
           <h1 className="relative z-20 text-[10vw] font-bold tracking-tight text-accent md:text-[10vw]">
             PROJECTS
           </h1>
@@ -26,7 +38,7 @@ export default function Projects() {
           />
         </div>
 
-        <div className="mt-10 flex flex-col gap-16 px-4 md:mt-14 md:gap-28 md:px-0">
+        <div className="mt-10 flex flex-col gap-16 px-4 md:mt-56 md:gap-28 md:px-0 lg:mt-14">
           <ProjectsCard project={featuredProject} align="left" />
 
           <h2 className="text-center text-[40px] leading-none font-bold tracking-[-0.06em] text-accent md:text-[64px]">

@@ -23,7 +23,7 @@ export default function Events() {
         <div className="absolute -left-[4rem] bottom-[8rem] h-[24rem] w-[30rem] -rotate-12 bg-secondary/35 md:-left-[3rem] md:bottom-[10rem] md:h-[32rem] md:w-[42rem] lg:h-[38rem] lg:w-[48rem]" />
         <div className="absolute -right-[4rem] bottom-4 h-[26rem] w-[30rem] rotate-12 bg-secondary/35 md:-right-[3rem] md:bottom-8 md:h-[34rem] md:w-[44rem] lg:h-[40rem] lg:w-[50rem]" />
       </div>
-      <div className="relative grid items-start gap-4 px-4 pt-24 md:min-h-screen md:grid-cols-[1fr_auto] md:gap-6 md:pl-10 md:pr-4">
+      <div className="relative grid items-start gap-4 px-4 pt-24 mb-20 md:min-h-screen md:grid-cols-[1fr_auto] md:gap-6 md:pl-10 md:pr-4">
         <h1 className="relative z-10 text-[10vw] font-bold tracking-tight text-accent md:z-1 md:text-[10vw]">
           PROGRAMS
         </h1>
@@ -33,8 +33,8 @@ export default function Events() {
           className="relative z-0 mt-8 h-[min(40vh,350px)] w-full max-w-[min(83vw,924px)] shrink-0 object-cover object-top md:pointer-events-none md:absolute md:top-64 md:right-0 md:z-auto md:mt-0 md:h-[min(60vh,700px)] md:w-[min(81vw,1036px)] md:max-w-none"
         />
       </div>
-      <div className="relative z-10 mx-auto mt-8 flex w-full max-w-5xl flex-col gap-8 px-4 pb-10 lg:max-w-6xl xl:max-w-7xl 2xl:max-w-360 md:mt-0 md:px-8 2xl:px-12">
-        <div className="grid gap-[15vw]">
+      <div className="relative z-10 mx-auto mt-8 flex w-full max-w-5xl flex-col gap-8 px-4 pb-10 md:mt-56 lg:max-w-6xl lg:mt-0 lg:px-8 xl:max-w-7xl 2xl:max-w-360 2xl:px-12">
+        <div className="grid gap-[10vw]">
           {EVENTS.map((event) => {
             const isFlipped = event.flippedLayout;
 
@@ -53,16 +53,8 @@ export default function Events() {
                   <div
                     className={`flex min-h-48 items-end rounded-[1vw] bg-base-100 p-5 shadow-md md:col-span-5 ${isFlipped ? "md:order-1" : ""}`}
                   >
-                    <h2 className="font-nunito-sans text-5xl leading-tight font-semibold text-accent">
-                      {event.title === "BIG LITTLE PROGRAM" ? (
-                        <>
-                          <span className="text-6xl">BIG </span>
-                          <span className="text-3xl">LITTLE </span>
-                          <span>PROGRAM</span>
-                        </>
-                      ) : (
-                        event.title
-                      )}
+                    <h2 className="font-nunito-sans text-[clamp(20px,10vw,75px)] leading-tight font-semibold text-accent">
+                      {event.title}
                     </h2>
                   </div>
                 </div>
