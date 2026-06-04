@@ -58,7 +58,7 @@ export default function Footer() {
               <div className="mt-4 flex items-center gap-5 text-base-100/90">
                 <a
                   className="hover:text-accent"
-                  href="https://instagram.com/"
+                  href="https://www.instagram.com/netsatucsd"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Instagram"
@@ -68,7 +68,7 @@ export default function Footer() {
 
                 <a
                   className="hover:text-accent"
-                  href="https://discord.com/"
+                  href="https://discord.gg/hRwCPVuxJQ"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Discord"
@@ -78,7 +78,7 @@ export default function Footer() {
 
                 <a
                   className="hover:text-accent"
-                  href="https://linkedin.com/"
+                  href="https://www.linkedin.com/company/netsatucsd/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn"

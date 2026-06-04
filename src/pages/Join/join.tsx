@@ -71,7 +71,7 @@ export default function Join() {
             </p>
             <div className="mt-2">
               <a
-                href="mailto:netsatucsd@gmail.com"
+                href="http://eepurl.com/dLfILo"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-full border-2 border-accent px-8 py-2 text-sm font-bold tracking-widest text-neutral transition-colors hover:bg-accent hover:text-accent-content font-karla uppercase"
